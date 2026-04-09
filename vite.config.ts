@@ -15,7 +15,7 @@ export default defineConfig(({mode}) => {
         '@': path.resolve(__dirname, '.'),
       },
     },
-    base: './', // Adicionado para resolver caminhos relativos
+    base: '/', // Alterado para resolver caminhos absolutos no ambiente de produção
     server: {
       // HMR is disabled in AI Studio via DISABLE_HMR env var.
       // Do not modifyâfile watching is disabled to prevent flickering during agent edits.
